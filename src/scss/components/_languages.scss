@@ -1,0 +1,60 @@
+.langchoice {
+    background: #888888;
+}
+
+.selected-lang {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.selected-lang:before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
+.flag {
+    height: 30px;
+}
+
+.langchoice .langmenu {
+    margin: 0;
+    padding: 0;
+    background-color: #888888;
+    border: 1px solid #f8f8f8;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: none;
+}
+
+.langchoice:hover .langmenu {
+    display: block;
+}
+
+.langchoice .langmenu li {
+    list-style: none;
+}
+
+.langchoice .langmenu li a {
+    text-decoration: none;
+    width: 125px;
+    display: block;
+    padding: 5px 10px;
+}
+
+.langchoice .langmenu li a:before{
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.langchoice .langmenu li a:hover {
+    background-color: #c9c9c9;
+}
