@@ -15,11 +15,12 @@
     display: block;
     width: 32px;
     height: 32px;
+    background-image: url('src/img/united-kingdom-flag-icon-256.png');
+    padding-left: 20px;
+    background-size: 50px;
+    background-repeat: no-repeat;
 }
 
-.flag {
-    height: 30px;
-}
 
 .langchoice .langmenu {
     margin: 0;
@@ -31,7 +32,7 @@
     display: none;
 }
 
-.langchoice:hover .langmenu {
+.selected-lang:hover .langmenu {
     display: block;
 }
 
@@ -57,4 +58,39 @@
 
 .langchoice .langmenu li a:hover {
     background-color: #c9c9c9;
+}
+
+.en::before {
+    margin-top: 15px;
+    background-image: url('src/img/united-kingdom-flag-icon-256.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
+
+.fr::before {
+    margin-top: 15px;
+    background-image: url('src/img/france-flag-icon-256.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
+
+.jp::before {
+    margin-top: 15px;
+    background-image: url('src/img/japan-flag-icon-256.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
+
+.cn::before {
+    margin-top: 15px;
+    background-image: url('src/img/china-flag-icon-256.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
+
+.spn::before {
+    margin-top: 15px;
+    background-image: url('src/img/spain-flag-icon-256.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
 }
