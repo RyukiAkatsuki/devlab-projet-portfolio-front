@@ -1,91 +1,78 @@
 .isometricmenu {
     position: relative;
     transform: skewY(-15deg);
+    li {
+        position: relative;
+        list-style: none;
+        width: 200px;
+        background: $bg-iso;
+        padding: 15px;
+        z-index: calc(1 * var(--i));
+        transition: 0.5s;
+        a {
+            text-decoration: none;
+            color: #f99494;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: 0.5s;
+        }
+        span {
+            position: absolute;
+            top: 0;
+            left: -40px;
+            width: 40px;
+            height: 100%;
+            transform-origin: right;
+            transform: skewY(45deg);
+            transition: 0.5s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.5;
+        }
+    }
+    li:hover {
+        background: var(--clr);
+        transform: translateX(-50px);
+        span {
+            opacity: 1;
+        }
+        a {
+            color: #fff;
+        }
+    }
+    li::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -40px;
+        width: 40px;
+        height: 100%;
+        background: $bg-iso;
+        transform-origin: right;
+        transform: skewY(45deg);
+        transition: 0.5s;
+    }
+    li:hover::before {
+        background: var(--clr);
+    }
+    li:after {
+        content: '';
+        position: absolute;
+        top: -40px;
+        left: 0;
+        width: 100%;
+        height: 40px;
+        background: $bg-iso;
+        transform-origin: bottom;
+        transform: skewX(45deg);
+        transition: 0.5s;
+    }
+    li:hover::after {
+        background: var(--clr);
+    }
+    li:last-child:after {
+        box-shadow: -100px 100px 20px rgba(0, 0, 0, 0.25);
+    }
 }
-
-.isometricmenu li {
-    position: relative;
-    list-style: none;
-    width: 200px;
-    background: #525252;
-    padding: 15px;
-    z-index: calc(1 * var(--i));
-    transition: 0.5s;
-}
-
-.isometricmenu li:hover {
-    background: var(--clr);
-    transform: translateX(-50px);
-}
-
-.isometricmenu li::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -40px;
-    width: 40px;
-    height: 100%;
-    background: #525252;
-    transform-origin: right;
-    transform: skewY(45deg);
-    transition: 0.5s;
-}
-
-.isometricmenu li:hover::before {
-    background: var(--clr);
-}
-
-.isometricmenu li::after {
-    content: '';
-    position: absolute;
-    top: -40px;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    background: #525252;
-    transform-origin: bottom;
-    transform: skewX(45deg);
-    transition: 0.5s;
-}
-
-.isometricmenu li:hover::after {
-    background: var(--clr);
-}
-
-
-.isometricmenu li a {
-    text-decoration: none;
-    color: #f99494;
-    display: block;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    transition: 0.5s;
-}
-
-.isometricmenu li span {
-    position: absolute;
-    top: 0;
-    left: -40px;
-    width: 40px;
-    height: 100%;
-    transform-origin: right;
-    transform: skewY(45deg);
-    transition: 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0.5;
-}
-
-.isometricmenu li:hover span {
-    opacity: 1;
-}
-
-.isometricmenu li:hover a {
-    color: #fff;
-}
-
-.isometricmenu li:last-child:after {
-    box-shadow: -100px 100px 20px rgba(0, 0, 0, 0.25);
-}
-
