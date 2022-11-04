@@ -165,3 +165,35 @@
     width: calc(100% - 20px);
     height: calc(100% - 20px);
 }
+
+// Project
+
+.creadesignlist {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    .creadesign {
+        width: 1000px;
+    }
+    h2 {
+        color: #b35900;
+    }
+}
+
+.codinglist {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    .coding {
+        width: 1200px;
+    }
+    h2 {
+        color: #1d397b;
+    }
+}
