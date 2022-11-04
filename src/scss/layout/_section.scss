@@ -197,3 +197,21 @@
         color: #1d397b;
     }
 }
+
+.personallist {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    .personal {
+        width: 1200px;
+    }
+    p {
+        font-size: 20px;
+    }
+    h2 {
+        color: #bc22e7;
+    }
+}
