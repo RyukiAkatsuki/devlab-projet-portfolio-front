@@ -1,0 +1,97 @@
+.langchoice {
+    background: #888888;
+}
+
+.selected-lang {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 1600px;
+}
+
+.selected-lang:before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url('src/img/united-kingdom-flag-icon-256.png');
+    padding-left: 20px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+}
+
+
+.langchoice .langmenu {
+    margin: 0;
+    padding: 0;
+    background-color: #888888;
+    border: 1px solid #f8f8f8;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: none;
+}
+
+.selected-lang:hover .langmenu {
+    display: block;
+}
+
+.langchoice .langmenu li {
+    list-style: none;
+}
+
+.langchoice .langmenu li a {
+    text-decoration: none;
+    width: 125px;
+    display: block;
+    padding: 5px 10px;
+}
+
+.langchoice .langmenu li a:before{
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.langchoice .langmenu li a:hover {
+    background-color: #c9c9c9;
+}
+
+.en::before {
+    margin-top: 15px;
+    background-image: url('src/img/united-kingdom-flag-icon-256.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
+
+.fr::before {
+    margin-top: 15px;
+    background-image: url('src/img/france-flag-icon-256.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
+
+.jp::before {
+    margin-top: 15px;
+    background-image: url('src/img/japan-flag-icon-256.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
+
+.cn::before {
+    margin-top: 15px;
+    background-image: url('src/img/china-flag-icon-256.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
+
+.spn::before {
+    margin-top: 15px;
+    background-image: url('src/img/spain-flag-icon-256.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
