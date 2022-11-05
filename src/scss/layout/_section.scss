@@ -216,3 +216,73 @@
     }
 }
 
+// Hobby
+
+.hobbieslist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .mainhobbies {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        .languages {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .anime {
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            .animedis {
+                padding-top: 20px;
+                width: 300px;
+                padding-left: 20px;
+            }
+            .favoriteanime {
+                padding-top: 20px;
+                width: 300px;
+                padding-left: 20px;
+            }
+            a {
+                text-decoration: none;
+            }
+        }
+        .manga {
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            .mangadis {
+                padding-top: 20px;
+                width: 300px;
+            }
+            .favoritemanga {
+                padding-top: 20px;
+                width: 300px;
+                padding-left: 20px;
+            }
+        }
+        .lightnovel {
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            .lndis {
+                padding-top: 20px;
+                width: 300px;
+            }
+            .favoriteln {
+                padding-left: 20px;
+                width: 300px;
+                padding-top: 20px;
+            }
+        }
+        .portablegames {
+            text-align: center;
+        }
+    }
+}
