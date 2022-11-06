@@ -9,6 +9,9 @@
     flex-direction: column;
     gap: 10px;
     margin-left: 1600px;
+    @include xl {
+        margin-left: 640px;
+    }
 }
 
 .selected-lang:before {

@@ -6,6 +6,9 @@
     padding-top: 90px;
     flex-wrap: wrap;
     gap: 40px;
+    @include xl {
+        flex-direction: column;
+    }
     .card {
         position: relative;
         width: 220px;

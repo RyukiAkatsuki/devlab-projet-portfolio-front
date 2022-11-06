@@ -10,6 +10,11 @@
   gap: 10px;
   margin-left: 1600px;
 }
+@media screen and (max-width: 640px) {
+  .selected-lang {
+    margin-left: 640px;
+  }
+}
 
 .selected-lang:before {
   content: "";
@@ -335,6 +340,11 @@
 .creadesignlist .creadesign {
   width: 1000px;
 }
+@media screen and (max-width: 640px) {
+  .creadesignlist .creadesign {
+    width: 600px;
+  }
+}
 .creadesignlist h2 {
   color: #b35900;
 }
@@ -350,6 +360,11 @@
 .codinglist .coding {
   width: 1200px;
 }
+@media screen and (max-width: 640px) {
+  .codinglist .coding {
+    width: 600px;
+  }
+}
 .codinglist h2 {
   color: #1d397b;
 }
@@ -364,6 +379,11 @@
 }
 .personallist .personal {
   width: 1200px;
+}
+@media screen and (max-width: 640px) {
+  .personallist .personal {
+    width: 600px;
+  }
 }
 .personallist p {
   font-size: 20px;
@@ -399,10 +419,20 @@
   width: 300px;
   padding-left: 20px;
 }
+@media screen and (max-width: 640px) {
+  .hobbieslist .mainhobbies .anime .animedis {
+    width: 200px;
+  }
+}
 .hobbieslist .mainhobbies .anime .favoriteanime {
   padding-top: 20px;
   width: 300px;
   padding-left: 20px;
+}
+@media screen and (max-width: 640px) {
+  .hobbieslist .mainhobbies .anime .favoriteanime {
+    width: 200px;
+  }
 }
 .hobbieslist .mainhobbies .anime a {
   text-decoration: none;
@@ -417,10 +447,20 @@
   padding-top: 20px;
   width: 300px;
 }
+@media screen and (max-width: 640px) {
+  .hobbieslist .mainhobbies .manga .mangadis {
+    width: 200px;
+  }
+}
 .hobbieslist .mainhobbies .manga .favoritemanga {
   padding-top: 20px;
   width: 300px;
   padding-left: 20px;
+}
+@media screen and (max-width: 640px) {
+  .hobbieslist .mainhobbies .manga .favoritemanga {
+    width: 200px;
+  }
 }
 .hobbieslist .mainhobbies .lightnovel {
   padding-top: 20px;
@@ -432,10 +472,20 @@
   padding-top: 20px;
   width: 300px;
 }
+@media screen and (max-width: 640px) {
+  .hobbieslist .mainhobbies .lightnovel .lndis {
+    width: 200px;
+  }
+}
 .hobbieslist .mainhobbies .lightnovel .favoriteln {
   padding-left: 20px;
   width: 300px;
   padding-top: 20px;
+}
+@media screen and (max-width: 640px) {
+  .hobbieslist .mainhobbies .lightnovel .favoriteln {
+    width: 200px;
+  }
 }
 .hobbieslist .mainhobbies .portablegames {
   text-align: center;
@@ -444,6 +494,11 @@
 .isometricmenu {
   position: relative;
   transform: skewY(-15deg);
+}
+@media screen and (max-width: 640px) {
+  .isometricmenu {
+    position: absolute;
+  }
 }
 .isometricmenu li {
   position: relative;
@@ -528,6 +583,11 @@
   padding-top: 90px;
   flex-wrap: wrap;
   gap: 40px;
+}
+@media screen and (max-width: 640px) {
+  .skill {
+    flex-direction: column;
+  }
 }
 .skill .card {
   position: relative;

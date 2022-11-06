@@ -1,6 +1,9 @@
 .isometricmenu {
     position: relative;
     transform: skewY(-15deg);
+    @include xl {
+        position: absolute;
+    }
     li {
         position: relative;
         list-style: none;
@@ -75,4 +78,5 @@
     li:last-child:after {
         box-shadow: -100px 100px 20px rgba(0, 0, 0, 0.25);
     }
+
 }
